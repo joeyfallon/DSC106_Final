@@ -7,37 +7,92 @@
         <link href="/resources/styles.css" rel='stylesheet'>
         <!-- IMPORTS -->
         <script src="/resources/main.js"></script>
+
+        <!-- ROBOTO SLAB FONT IMPORT-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Exploring the 2020 NBA MVP Race</h1>
+        <h1 id="Header">Exploring the 2020 NBA MVP Race</h1> <br>
         <div id="missionStatement">
             <h2>MISSION STATEMENT</h2>
             <P>
                 INSERT MISSION STATEMNET HERE
             </P>
         </div>
+
+        <br>
+
         <div id="MVPintro">
-            <h2>Intro to mission statement</h2>
+            <h2>What makes a league MVP? (or some shit)</h2>
             <p>
                 INSERT MISSION STATEMENT INTRO HERE
             </p>
         </div>
-        <section id="playetIntro">
+
+        <br>
+
+        <section id="playerIntro">
             <h2>Player Intro</h2>
-            <div class="playerCard">
-                <div id='giannisCard'>
-                    <img src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
-                    <h3>Giannis Antetokounmpo</h3>
+            <div id="playerCard">
+                <div id='giannisCard' class="innerCard">
+                    <img class="headshot" width=70% src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
+                    <h1>#34 Giannis Antetokounmpo</h1>
+                    <h1>Milwaukee Bucks</h1>
+                    <h1>FORWARD</h1>
+                    <br>
+                    <p>
+                        PLAYER SUMMARY HERE
+                    </p>
                 </div>
-                <div id='lebronCard'>
-                    <img src="resources/images/lebron.png" alt="Lebron James">
-                    <h3>Lebron James</h3>
+                <div id='lebronCard' class="innerCard">
+                    <img class="headshot" width=70% src="resources/images/lebron.png" alt="Lebron James">
+                    <h1>#23 Lebron James</h1>
+                    <h1>Los Angeles Lakers</h1>
+                    <h1>FORWARD</h1>
+                    <br>
+                    <p>
+                        PLAYER SUMMARY HERE
+                    </p>
                 </div>
             </div>
         </section>
-        <section id='teamChart'></section>
-        <section id='playerChart'></section>
-        <section id='radarChart'></section>
+
+        <br><br>
+        
+        <section id='teamChart'>
+            <h1>TEAM VIZ AND COMPARISON</h1>
+            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
+            <p>
+                BREAKING DOWN THE CHART
+            </p>
+        </section>
+
+        <br><br>
+
+        <section id='playerChart'>
+            <h1>COMPARING INDIVIDUAL STATS</h1>
+            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
+            <p>
+                BREAKING DOWN THE CHART
+            </p>
+        </section>
+    
+        <br><br>
+
+        <section id='radarChart'>
+            <h1>COMPARING PLAYERS VIA TRADITIONAL STATS</h1>
+            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
+            <p>
+                BREAKING DOWN THE CHART
+            </p>
+        </section>
+
+        <br><br>
+
+        <h1>Conclusion</h1>
+        <p>
+            Insert conclusion here.
+        </p>
         
     </body>
 </html>

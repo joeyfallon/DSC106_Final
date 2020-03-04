@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #efe2c7;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', 'serif';
+}
+
+#Header {
+    font-size: 50px;
+}
+
+#playerCard {
+    display: flex;
+}
+
+.innerCard {
+    width: 50%;
+    text-align: unset;
+    background-color: white;
+}
+

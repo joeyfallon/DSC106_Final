@@ -1,11 +1,13 @@
 <html lang='en'>
     <head>
+        <!-- META DATA -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name='author' content="Jon Zhang and Joseph Fallon">
-        <title>Exploring the 2020 NBA MVP Race</title>
-        <!-- IMPORTS -->
+        <!-- TITLE -->
+        <title>Exploring The 2020 NBA MVP Race</title>
+        <!-- IMPORTS AS NECESSARY-->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -15,73 +17,141 @@
         <link href="resources/styles.css" rel='stylesheet'>
     </head>
     <body>
-        <br><br>
-        <h1 id="Header">Exploring the 2020 NBA MVP Race</h1>
-        <br><br>
+        <br>
+        <br>
+        <h1 id="Header">Exploring The 2020 NBA MVP Race</h1>
+        <br>
+        <br>
+        <!-- OUR MISSION STATEMENT -->
         <div id="missionStatement">
             <h2>Mission Statement</h2>
             <p>
-                The <b>National Basketball Association</b> "NBA" <b>Most Valuable Player</b> "MVP" award is exclusive to only the best of the best in the league.
+                    The <b>National Basketball Association</b> "NBA" <b>Most Valuable Player</b> "MVP" award is exclusive to only the best of the best in the league.
                 We wanted to see if we could constitute what the "best" actually means--or if
                 there's a clear, cut candidate that stands above everyone else in terms of production.
                 The MVP award is not just given to anyone, and we would like to see if our data would
-                point us in the direction of a particular candidate, being either Lebron James or Giannis Antetokounmpo.
+                point us in the direction of a particular candidate, being either LeBron James or Giannis Antetokounmpo.
                 However, due to the unforseen circumstances, the NBA season has been suspended indefinitely so the 
                 current data we have now may not be representative of what the data would be in choosing the NBA MVP. The 
-                race this year has been very close, but in our research we think the award is already skewed towards one person.
-                So let's investigate further, shall we?
+                race this year has been very close so let's investigate further, shall we?
             </p>
         </div>
-        <br><br>
+        <br>
+        <br>
+        <!-- CANDIDATE SECTION -->
         <section id="playerIntro">
-            <h2>Potential Candidates</h2>
+            <h2>Candidate Profiles</h2>
             <div id="playerCard">
+                <!-- GIANNIS ANTETOKOUNMPO PROFILE -->
                 <div id='giannisCard' class="innerCard">
                     <img class="headshot" src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
+                    <br>
+                    <br>
                     <h1>Giannis "Greek Freak" Antetokounmpo</h1>
-                    <h1>Milwaukee Bucks #34</h1>
+                    <h1>Milwaukee Bucks #34 (1st Seed -- Eastern Conference)</h1>
                     <h1>Power Forward</h1>
-                    <h1>6'11", 242 LBs</h1>
+                    <h1>6'11" | 242 lbs</h1>
                     <br>
                     <div className='stats'>
-                        <b>PPG</b>: 29.6 | <b>RPG</b>: 13.7
+                        <b>PPG</b>: 29.6  |  <b>RPG</b>: 13.7
                         <br>
-                        <b>APG</b>: 5.8 | <b>PER</b>: 31.71
+                        <b>APG</b>: 5.8  |  <b>PER</b>: 31.71
                         <br>
-                        <b>BPG</b>: 1.0 | <b>SPG</b>: 1.0
+                        <b>BPG</b>: 1.0  |  <b>SPG</b>: 1.0
                     </div>
                 </div>
-                
+                <!-- LEBRON JAMES PROFILE -->
                 <div id='lebronCard' class="innerCard">
-                    <img class="headshot" src="resources/images/lebron.png" alt="Lebron James">
-                    <h1>Lebron "The King" James</h1>
-                    <h1>Los Angeles Lakers #23</h1>
+                    <img class="headshot" src="resources/images/lebron.png" alt="LeBron James">
+                    <br>
+                    <br>
+                    <h1>LeBron "The King" James</h1>
+                    <h1>Los Angeles Lakers #23 (1st Seed -- Western Conference)</h1>
                     <h1>Point Guard | Small Forward</h1>
-                    <h1>6'9", 250 LBs</h1>
+                    <h1>6'9" | 250 lbs</h1>
                     <br>
                     <div className='stats'>
-                        <b>PPG</b>: 25.7 | <b>RPB</b>: 7.9
+                        <b>PPG</b>: 25.7  |  <b>RPB</b>: 7.9
                         <br>
-                        <b>APG</b>: 10.6 | <b>PER</b>: 26.08
+                        <b>APG</b>: 10.6  |  <b>PER</b>: 26.08
                         <br>
-                        <b>BPG</b>: 0.5 | <b>SPG</b>: 1.2
+                        <b>BPG</b>: 0.5  |  <b>SPG</b>: 1.2
                     </div>
                 </div>
             </div>
         </section>
-        <br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- BUILD GLOSSARY HERE -->
+        <div class='glossary'>
+            <table class = "simpleTable" >
+                <tr>
+                    <td>
+                        <h2>NBA Glossary</h2>
+                        <table>
+                            <tr style="font-size: 5;"><center><b></b></center></tr>
+                            <tr>
+                                <!-- POINTS -->
+                                <td><b>PPG </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged points per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <!-- REBOUNDS -->
+                                <td><b>RPG </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged rebounds per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <!-- ASSISTS -->
+                                <td><b>APG </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged assists per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <!-- BLOCKS -->
+                                <td><b>BPG </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged blocks per game for a player.
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- STEALS -->
+                                <td><b>SPG </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged steals per game for a player.
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- PLAYER EFFICIENCY RATING -->
+                                <td><b>PER </br><font size='1'>(<i>Player Efficiency Rating</i>)</font></b></td>
+                                <td>The NBA's advanced formula that measure a player's per-minute performance, taking into account
+                                    field goalds, free throws, 3 pointers, assists, rebounds, blocks, steals, and negative
+                                    stats, like turnovers, missed shots, fouls to finally produce a score.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- WHAT IS AN MVP -->
         <div id="MVPintro">
             <h2>What Makes A League MVP?</h2>
             <p>
-                The <b>Most Valuable Player</b> award by definition, is a player who exceeds the NBA league average for 
+                    The <b>Most Valuable Player</b> award by definition, is a player who exceeds the NBA league average for 
                 every player statistic, and ultimately contributes most towards their team winning. The NBA league average is as follows:
                 <b>PPG</b>: 10.2, <b>RPG</b>: 4.1, <b>APG</b>, 2.0, <b>SPG</b>: 0.5, <b>BPG</b>: 0.4, <b>PER</b>: 13.2. So in recent years,
                 the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
                 and that's where we can offer more insight.
             </p>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <!-- RADAR CHARTS HERE -->
-        <br><br><br>
         <section id='radarChart'>
             <div id='giannisChartDiv'>
                 <h1>
@@ -91,148 +161,169 @@
             </div>
             <div id='giannisAndLebronChartDiv'>
                 <h1>
-                    Giannis Antetokounmpo vs. Lebron James
+                    Giannis Antetokounmpo vs. LeBron James
                 </h1>
                 <canvas id='giannisAndLebronChart'></canvas>
             </div>
             <div id='lebronChartDiv'>
                 <h1>
-                    Lebron James vs. Average NBA Player
+                    LeBron James vs. Average NBA Player
                 </h1>
                 <canvas id='lebronChart'></canvas>
             </div>
-            <br><br>
+            <br>
+            <br>
             <script>
-                // getChart('giannis', 'Giannis Antetokounmpo', 'Average NBA Player', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
-                // getChart('lebron', 'Lebron James', 'Average NBA Player', [25.7, 7.9, 10.6, 26.08, 0.5, 1.2], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
-                // getChart('giannisAndLebron', 'Giannis Antetokounmpo', 'Lebron James', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [25.7, 7.9, 10.6, 26.08, 0.5, 1.2]);
                 getChart('giannis', 'Giannis Antetokounmpo', 'Average NBA Player', [29.6, 13.7, 5.8], [10.2, 4.1, 2.0]);
-                getChart('giannisAndLebron', 'Giannis Antetokounmpo', 'Lebron James', [29.6, 13.7, 5.8], [25.7, 7.9, 10.6]);
-                getChart('lebron', 'Lebron James', 'Average NBA Player', [25.7, 7.9, 10.6], [10.2, 4.1, 2.0]);
+                getChart('giannisAndLebron', 'Giannis Antetokounmpo', 'LeBron James', [29.6, 13.7, 5.8], [25.7, 7.9, 10.6]);
+                getChart('lebron', 'LeBron James', 'Average NBA Player', [25.7, 7.9, 10.6], [10.2, 4.1, 2.0]);
             </script>
         </section>
-        <br><br><br><br><br>
-        <div class='glossary'>
-            <table class = "simpleTable" >
-                <tr>
-                    <td>
-                        <h2>Glossary</h2>
-                        <table>
-                            <tr style="font-size: 5;"><center><b></b></center></tr>
-                            <tr>
-                                <td><b>PPG </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
-                                <td>The statistic that measures averaged points per game for a player.</td>
-                            </tr>
-                            <tr>
-                                <td><b>RPG </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
-                                <td>The statistic that measures averaged rebounds per game for a player.</td>
-                            </tr>
-                            <tr>
-                                <td><b>APG </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
-                                <td>The statistic that measures averaged assists per game for a player.</td>
-                            </tr>
-                            <tr>
-                                <td><b>BPG </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
-                                <td>The statistic that measures averaged blocks per game for a player.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><b>SPG </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
-                                <td>The statistic that measures averaged steals per game for a player.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><b>PER </br><font size='1'>(<i>Player Efficiency Rating</i>)</font></b></td>
-                                <td>The NBA's score to measure a player's per-minute performance, taking into account
-                                    field goalds, free throws, 3 pointers, assists, rebounds, blocks, steals, and negative
-                                    stats, like turnovers, missed shots, and fouls.
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- STORY TIME -->
         <div id="tellTheStory">
             <h2>What's The Story Here?</h2>
             <p>
-                Lebron James has had a "GOAT" of a career. Anyone who thinks otherwise clearly has bias because if there's one thing
-                you can't argue with, it's pure, objective statistics. Lebron is currently in his 17th year in the NBA and has won
-                3 NBA championships, 3 NBA Finals MVP awards, 4 NBA MVP awards, and the list goes on. Lebron has had a career average of
-                27.1 PPG, 7.4 RPG and APG, 1.6 SPG, and 0.8 BPG and there is no doubt that when it's all said and done, The "King" will be
-                inducted into the NBA Hall of Fame and potentially known as the greatest to have ever played the game of basketball.
+                    LeBron James has had a <b>"GOAT"</b> of a career. Anyone who thinks otherwise clearly has bias because
+                you can't argue with objective statistics, accolades and merit. LeBron is currently in his 17th year in the NBA and has won
+                <b>3 NBA championships</b>, <b>3 NBA Finals MVP awards</b>, <b>4 NBA MVP awards</b>, and the list goes on. LeBron has had a career average of
+                27.1 PPG, 7.4 RPG and APG, 1.6 SPG, and 0.8 BPG and there is no doubt that when it's all said and done, The <b>"King"</b> will be
+                inducted into the <b>Naismith Memorial Basketball Hall of Fame</b> and potentially known as the greatest to have ever played the game of basketball.
             </p>
             <p>
-                When Giannis Antetokounmpo first entered the NBA, he was not immediately a star player who could dominate his opponents with ease.
+                    When Giannis Antetokounmpo first entered the NBA, he was not immediately a star player who could dominate his opponents with ease.
                 Giannis took his time to develop; when you compare his photos from his rookie year to now, you would not even be able to recognize 
-                that they're the same person. Giannis is currently in his 7th year in the NBA and most will argue that he is not even at his prime.
-                It is a pure testament to the work Giannis has put into his skills see the current result we have now of him. 
-                Giannis has won the NBA MVP award once and boasts a career average of 20.0 PPG, 8.9 RPG, 4.3 APG, 1.2 SPG, and 1.3 BPG. Giannis's team
-                this year set the record for making the playoffs the fastest in history, having a record of 48-8 to secure the number one seed in the East.
-                Giannis will only continue to get better and the game of basketball is priviledged to have seen such growth from the "Greek Freak."
+                that they're the same person. Giannis is currently in his 7th year in the NBA and most will argue that he is <b>not even</b> at his prime.
+                It is a <b>pure testament</b> to the work Giannis has put into his skills see the current result we have now of him. 
+                Giannis has won the <b>NBA MVP award</b> once and boasts a career average of 20.0 PPG, 8.9 RPG, 4.3 APG, 1.2 SPG, and 1.3 BPG. Giannis's team
+                this year set the record for making the playoffs the <b>fastest in history</b>, having a record of <b>48-8</b> to secure the number one seed in the East.
+                Giannis will only continue to get better and the game of basketball is <b>priviledged</b> to have seen such growth from the <b>"Greek Freak."</b>
             </p>
             <p>
-                So from what we know so far, Lebron has had a much longer career than Giannis so it's not really fair to compare the two's accomplishments.
+                    So from what we know so far, LeBron has had a much longer career than Giannis so it's not really fair to compare the two's accomplishments.
+                Let's observe the curent NBA season of 2019-2020 to compare LeBron and Giannis along with their respective teams a little closer then. 
             </p>
         </div>
-        <br><br>
+        <br>
+        <br>
         <!-- LINE CHART HERE -->
         <section id='lineChart'>
             <div class=chart>
+                <!-- EMBED THE INFOGRAM -->
                 <script id="infogram_0_58d3af08-4a33-4aef-800a-b5751cffb80b" title="Line Chart Bucks vs Lakers" src="https://e.infogram.com/js/dist/embed.js?zSe" type="text/javascript"></script>
                 <a href="https://infogram.com/58d3af08-4a33-4aef-800a-b5751cffb80b" style="color:#989898!important;text-decoration:none!important;" target="_blank">Line Chart Bucks vs Lakers</a>
                 <br>
                 <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
             </div>     
         </section>
-        <!-- <br><br>
-        <div id="interpretTheChart">
-            <h2>What's The Takeaway?</h2>
-            <p>
-                INSERT LOGIC AND HOLISTIC REASONING HERE
-            </p>
-        </div> 
-        <br><br> -->
+        <br>
+        <br>
+        <br>
+        <!-- ADD ANALYSIS HERE -->
+        <h2>Contextual Analysis</h2>
+        <p>
+                Prior to the shut-down of the NBA season due to COVID-19, the Lakers and the Bucks had faced each other just twice. 
+            In their first encounter, the Bucks had beaten the Lakers 111-104. This was earlier in the season where the teams have not quite "gel-ed" with each other.  
+            In their second encounter, the Lakers beat the Bucks 113-103. This was very recent and speaks more of the team's potential playoff performance. 
+        </p>
+        <p>
+                From the line chart above, we can see that the Lakers had rivaled the Bucks up until December. 
+            In December the Lakers faced a 4 game losing streak while the Bucks continued on their win streak.
+            It goes to show that the NBA is a truly competitive league because the Lakers lost to the bottom seeds in each conference. 
+            These losses set them considerably behind the Bucks but still good enough to be #1 in the Western Conference (arguably the more competitive conference). 
+            While both teams are leading within their respective conferences and divisions, the Bucks took a clear lead in overall wins.
+        </p>
+        <br>
+        <br>
+        <br>
         <!-- STACKED BAR CHART HERE -->
         <section id='stackedBarChart'>
             <div class='chart'>
+                <!-- EMBED THE INFOGRAM -->
                 <script id="infogram_0_169b2584-5231-4865-b14c-e843d7a52ace" title="Stacked Bar Chart Giannis vs Lebron" src="https://e.infogram.com/js/dist/embed.js?VB7" type="text/javascript"></script>
                 <a href="https://infogram.com/169b2584-5231-4865-b14c-e843d7a52ace" style="color:#989898!important;text-decoration:none!important;" target="_blank">Stacked Bar Chart Giannis vs Lebron</a>
                 <br>
                 <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
             </div>
         </section>
-        <!-- <br><br>
-        <div id="interpretTheChart">
-            <h2>What's The Takeaway?</h2>
-            <p>
-                INSERT LOGIC AND HOLISTIC REASONING HERE
-            </p>
-        </div> 
-        <br><br> -->
+        <br>
+        <br>
+        <br>
+        <!-- ADD ANALYSIS HERE -->
+        <h2>Contextual Analysis</h2>
+        <p>
+                Looking at the stacked bar chart above, we can compare LeBron and Giannis' total statistics easily.
+            While Giannis is entering the prime of his career, LeBron is arguably past his peak with his NBA debut nearing 2 decades ago.
+            Although LeBron trails slightly in overall points, he greatly overcomes Giannis's overall assist statistic.
+            This means that LeBron is forfeiting padding his own point statistics to make more plays for his team (as any point guard should). 
+            Keep in mind that LeBron is currently averaging the most assists he's ever averaged.
+        </p>
+        <br>
+        <br>
+        <br>
         <!-- NEW DATA VIZ HERE -->
         <section id='pieChart'>
             <div class='chart'>
+                <!-- EMBED THE INFOGRAM -->
                 <script id="infogram_0_11a4407a-90b9-4904-b708-eb93968f13ad" title="Pie Chart comparing the PER of Giannis and Lebron" src="https://e.infogram.com/js/dist/embed.js?sED" type="text/javascript"></script>
                 <a href="https://infogram.com/11a4407a-90b9-4904-b708-eb93968f13ad" style="color:#989898!important;text-decoration:none!important;" target="_blank">Pie Chart comparing the PER of Giannis and Lebron</a>
                 <br>
                 <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
             </div>
         </section>
-        <!-- <br><br>
-        <div id="interpretTheChart">
-            <h2>What's The Takeaway?</h2>
-            <p>
-                INSERT LOGIC AND HOLISTIC REASONING HERE
-            </p>
-        </div> 
-        <br><br> -->
-        <br><br>
-        <h1>Conclusion</h1>
+        <br>
+        <br>
+        <br>
+        <!-- ADD ANALYSIS HERE -->
+        <h2>Contextual Analysis</h2>
         <p>
-            INSERT FINAL NOTES HERE
+                In observing the PER pie chart, Giannis claims a significantly higher PER (per minute performance) than LeBron. 
+            This PER is currently #1 in the NBA and historically places him at #7 on the leaderboard. 
+            Earlier in the season, Giannis actually had a 32.35 PER, which is actually the highest PER ever recorded in NBA history.
+            If the NBA season were to continue and Giannis kept at his productive pace, one can only speculate the records Giannis could have broken.
+            However, we have to acknowledge LeBron for keeping that same consistency when it comes to his individual stats. To do what he does at 
+            year 17 at 36 years old is absolutely un-heard of.
         </p>
-        <br><br>
+        <br>
+        <br>
+        <br>
+        <h2>What's Our Final Takeaway?</h2>
+        <p>
+                LeBron, at this state of his career, has probably another 3-4 dominant years left in him before he's simply too old to play aggressively or explosively without risk for injury.
+            Keeping in mind that the MVP award is a regular season award, it would make sense for LeBron to not try as hard to have individual success when he has his young teammate Anthony Davis,
+            a very proficient and efficient scorer--which is why LeBron is averaging so many assists (along with high-volume 3-PT shooters on his team). LeBron is most likely saving his energy
+            for the upcoming (now delayed) playoffs. For LeBron to establish himself as one of the greatest players to ever play the game of basketball, he would definitely need more championships.
+        </p>
+        <p>
+                Holistically, the Lakers, as well as LeBron, have more to prove following the tragic passing of Laker legend, Kobe Bryant. Sure, Giannis is statistically a better player at the moment (still arguable),
+            but a LeBron MVP makes for a more emotional conclusion to the year following Kobe's death. However, looking at our data visualizations, if the season were to end today, Giannis
+            would most likely be the reigning NBA MVP for a second consecutive year. 
+        </p>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <details>
+                <summary><b>Data provided from from the following sources</b>:</summary>
+            <p><b>Line Chart</b></p>
+            <p><b>Schedule for the Los Angeles Lakers</b>:
+                https://www.espn.com/nba/team/schedule/_/name/lal</p>
+            <p><b>Schedule for the Milwaukee Bucks</b>:
+                https://www.espn.com/nba/team/schedule/_/name/mil</p>
+            <p><b>Radar Chart</b></p>
+            <p><b>Regular Season Averages and Total Amounts for Lebron James</b>:
+                https://www.espn.com/nba/player/stats/_/id/1966/lebron-james</p>
+            <p><b>Regular Season Averages and Total Amounts for Giannis Antetokounmpo</b>:
+                https://www.espn.com/nba/player/stats/_/id/3032977/giannis-antetokounmpo</p>
+            <p><b>Pie Chart</b></p>
+            <p><b>PER Leaders</b>:
+                https://www.basketball-reference.com/leaders/per_season.html</p>
+            </details>
+        </footer>
+        <br>
+        <br>
     </body>
 </html>

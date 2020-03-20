@@ -30,8 +30,8 @@ h1, h2 {
 p {
     display: block;
     margin-top: 1em;
-    margin-left: 23em;
-    margin-right: 23em;
+    margin-left: 15em;
+    margin-right: 15em;
 }
 
 .headshot {
@@ -39,17 +39,17 @@ p {
 }
 
 .glossary {
-    width: 30%;
-    margin: 0;
-    left: 35%;
-    position: absolute;
-    top: 35em;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: relative;
 }
 
 #giannisCard {
-    width: 30%;
+    width: 35%;
     background-color: #efe2c7; /* Bucks logo color */
-    left: 5%;
+    left: 15%;
     position: absolute;
     mix-blend-mode: multiply;
 }
@@ -72,9 +72,9 @@ p {
 }
 
 #lebronCard {
-    width: 30%;
+    width: 35%;
     background-color: #efe2c7; /* Bucks logo color */
-    right: 5%;
+    right: 15%;
     position: absolute;
     mix-blend-mode: multiply;
 }

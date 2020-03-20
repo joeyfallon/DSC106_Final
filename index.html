@@ -47,7 +47,7 @@
                 and that's where we can offer more insight.
             </p>
         </div>
-        <br><br><br>
+        <br><br>
         <section id="playerIntro">
             <h2>Player Intro</h2>
             <div id="playerCard">
@@ -65,49 +65,9 @@
                         BLK: 1.0 | STL: 1.0
                     </div>
                 </div>
-                <div class='glossary'>
-                    <table class = "simpleTable">
-                        <tr>
-                            <td width = "90%">
-                                <h2>Glossary</h2>
-                                <table>
-                                    <tr style="font-size: 5;"><center><b></b></center></tr>
-                                    <tr>
-                                        <td><b>PTS </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
-                                        <td>The averaged points per game for a player.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>REB </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
-                                        <td>The averaged rebounds per game for a player.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>AST </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
-                                        <td>The averaged assists per game for a player.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>BLK </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
-                                        <td>The averaged blocks per game for a player.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>STL </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
-                                        <td>The averaged steals per game for a player.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>PER </br><font size='1'>(<i>Player Efficiency Rating</i>)</font></b></td>
-                                        <td>The NBA's score to measure a player's per-minute performance, taking into account
-                                            field goalds, free throws, 3 pointers, assists, rebounds, blocks, steals, and negative
-                                            stats, like turnovers, missed shots, and fouls.
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                
                 <div id='lebronCard' class="innerCard">
-                    <img class="headshot" width=70% src="resources/images/lebron.png" alt="Lebron James">
+                    <img class="headshot" src="resources/images/lebron.png" alt="Lebron James">
                     <h1>#23 Lebron James</h1>
                     <h1>Los Angeles Lakers</h1>
                     <h1>FORWARD</h1>
@@ -123,22 +83,95 @@
             </div>
         </section>
         <!-- RADAR CHARTS HERE -->
+        <br><br><br>
         <section id='radarChart'>
             <div id='giannisChartDiv'>
+                <h1>
+                    Giannis vs an Average NBA Player
+                </h1>
                 <canvas id='giannisChart'></canvas>
             </div>
             <div id='giannisAndLebronChartDiv'>
+                <h1>
+                    Giannis vs Lebron
+                </h1>
                 <canvas id='giannisAndLebronChart'></canvas>
             </div>
             <div id='lebronChartDiv'>
+                <h1>
+                    Lebron vs an Average NBA Player
+                </h1>
                 <canvas id='lebronChart'></canvas>
             </div>
+            <br><br>
             <script>
                 getChart('giannis', 'Giannis', 'Average NBA Player', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
                 getChart('lebron', 'Lebron', 'Average NBA Player', [25.7, 7.9, 10.6, 26.08, 0.5, 1.2], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
                 getChart('giannisAndLebron', 'Giannis', 'Lebron', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [25.7, 7.9, 10.6, 26.08, 0.5, 1.2])
             </script>
         </section>
+        <br><br><br><br><br>
+        <div class='glossary'>
+            <table class = "simpleTable" >
+                <tr>
+                    <td>
+                        <h2>Glossary</h2>
+                        <table>
+                            <tr style="font-size: 5;"><center><b></b></center></tr>
+                            <tr>
+                                <td><b>PTS </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
+                                <td>The averaged points per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <td><b>REB </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
+                                <td>The averaged rebounds per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <td><b>AST </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
+                                <td>The averaged assists per game for a player.</td>
+                            </tr>
+                            <tr>
+                                <td><b>BLK </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
+                                <td>The averaged blocks per game for a player.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>STL </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
+                                <td>The averaged steals per game for a player.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>PER </br><font size='1'>(<i>Player Efficiency Rating</i>)</font></b></td>
+                                <td>The NBA's score to measure a player's per-minute performance, taking into account
+                                    field goalds, free throws, 3 pointers, assists, rebounds, blocks, steals, and negative
+                                    stats, like turnovers, missed shots, and fouls.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br><br><br>
+        <div id="MVPintro">
+            <h2>What's The Story Here?</h2>
+            <p>
+                Lebron James has had a "GOAT" of a career. Anyone who thinks otherwise clearly has bias because if there's one thing
+                you can argue with, it's pure, objective statistics. Lebron spent 17 years in the NBA 
+            </p>
+            <p>
+                The Most Valuable Player award by definition, is a player who exceeds the NBA league average for 
+                every player statistic, and ultimately contributes most towards their team winning. So in recent years,
+                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
+                and that's where we can offer more insight.
+            </p>
+            <p>
+                The Most Valuable Player award by definition, is a player who exceeds the NBA league average for 
+                every player statistic, and ultimately contributes most towards their team winning. So in recent years,
+                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
+                and that's where we can offer more insight.
+            </p>
+        </div>
         <br><br>
         <!-- LINE CHART HERE -->
         <section id='lineChart'>
@@ -159,9 +192,6 @@
                 <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
             </div>
         </section>
-    
-        <br><br>
-
         <!-- <section id='radar1'>
             <div id="radarChart1"></div>
             <h1>COMPARING PLAYERS VIA TRADITIONAL STATS</h1>

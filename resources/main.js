@@ -3,7 +3,8 @@ function getChart(name, name1, name2, data, data2) {
     var chart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ['PTS', 'REB', 'AST', 'PER', 'BLK', 'STL'],
+            // labels: ['PTS', 'REB', 'AST', 'PER', 'BLK', 'STL'],
+            labels: ['PTS', 'REB', 'AST'],
             datasets: [{
                 label: name1,
                 data,

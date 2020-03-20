@@ -4,29 +4,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name='author' content="Jon Zhang and Joseph Fallon">
-        <title>2020 NBA MVP PREDICTION</title>
+        <title>Exploring the 2020 NBA MVP Race</title>
         <!-- IMPORTS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/highcharts-more.js"></script>
-        <script src="https://code.highcharts.com/modules/export-data.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts-more.js"></script>
-        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script type="text/javascript" src="resources/main.js"></script>
         <!-- ROBOTO SLAB FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-        <link href="./resources/styles.css" rel='stylesheet'>
+        <link href="resources/styles.css" rel='stylesheet'>
     </head>
     <body>
         <br><br>
         <h1 id="Header">Exploring the 2020 NBA MVP Race</h1>
         <br><br>
         <div id="missionStatement">
-            <h2>MISSION STATEMENT</h2>
+            <h2>Mission Statement</h2>
             <p>
-                The NBA MVP award is exclusive to only the best of the best in the league.
+                The <b>National Basketball Association</b> "NBA" <b>Most Valuable Player</b> "MVP" award is exclusive to only the best of the best in the league.
                 We wanted to see if we could constitute what the "best" actually means--or if
                 there's a clear, cut candidate that stands above everyone else in terms of production.
                 The MVP award is not just given to anyone, and we would like to see if our data would
@@ -37,77 +32,83 @@
                 So let's investigate further, shall we?
             </p>
         </div>
-        <br><br><br>
-        <div id="MVPintro">
-            <h2>What makes a league MVP?</h2>
-            <p>
-                The Most Valuable Player award by definition, is a player who exceeds the NBA league average for 
-                every player statistic, and ultimately contributes most towards their team winning. So in recent years,
-                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
-                and that's where we can offer more insight.
-            </p>
-        </div>
         <br><br>
         <section id="playerIntro">
-            <h2>Player Intro</h2>
+            <h2>Potential Candidates</h2>
             <div id="playerCard">
                 <div id='giannisCard' class="innerCard">
                     <img class="headshot" src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
-                    <h1>#34 Giannis Antetokounmpo</h1>
-                    <h1>Milwaukee Bucks</h1>
-                    <h1>FORWARD</h1>
+                    <h1>Giannis "Greek Freak" Antetokounmpo</h1>
+                    <h1>Milwaukee Bucks #34</h1>
+                    <h1>Power Forward</h1>
+                    <h1>6'11", 242 LBs</h1>
                     <br>
                     <div className='stats'>
-                        PTS: 29.6 | REB: 13.7
+                        <b>PPG</b>: 29.6 | <b>RPG</b>: 13.7
                         <br>
-                        AST: 5.8 | PER: 31.71
+                        <b>APG</b>: 5.8 | <b>PER</b>: 31.71
                         <br>
-                        BLK: 1.0 | STL: 1.0
+                        <b>BPG</b>: 1.0 | <b>SPG</b>: 1.0
                     </div>
                 </div>
                 
                 <div id='lebronCard' class="innerCard">
                     <img class="headshot" src="resources/images/lebron.png" alt="Lebron James">
-                    <h1>#23 Lebron James</h1>
-                    <h1>Los Angeles Lakers</h1>
-                    <h1>FORWARD</h1>
+                    <h1>Lebron "The King" James</h1>
+                    <h1>Los Angeles Lakers #23</h1>
+                    <h1>Point Guard | Small Forward</h1>
+                    <h1>6'9", 250 LBs</h1>
                     <br>
                     <div className='stats'>
-                        PTS: 25.7 | REB: 7.9
+                        <b>PPG</b>: 25.7 | <b>RPB</b>: 7.9
                         <br>
-                        AST: 10.6 | PER: 26.08
+                        <b>APG</b>: 10.6 | <b>PER</b>: 26.08
                         <br>
-                        BLK: 0.5 | STL: 1.2
+                        <b>BPG</b>: 0.5 | <b>SPG</b>: 1.2
                     </div>
                 </div>
             </div>
         </section>
+        <br><br><br><br>
+        <div id="MVPintro">
+            <h2>What Makes A League MVP?</h2>
+            <p>
+                The <b>Most Valuable Player</b> award by definition, is a player who exceeds the NBA league average for 
+                every player statistic, and ultimately contributes most towards their team winning. The NBA league average is as follows:
+                <b>PPG</b>: 10.2, <b>RPG</b>: 4.1, <b>APG</b>, 2.0, <b>SPG</b>: 0.5, <b>BPG</b>: 0.4, <b>PER</b>: 13.2. So in recent years,
+                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
+                and that's where we can offer more insight.
+            </p>
+        </div>
         <!-- RADAR CHARTS HERE -->
         <br><br><br>
         <section id='radarChart'>
             <div id='giannisChartDiv'>
                 <h1>
-                    Giannis vs an Average NBA Player
+                    Giannis Antetokounmpo vs. Average NBA Player
                 </h1>
                 <canvas id='giannisChart'></canvas>
             </div>
             <div id='giannisAndLebronChartDiv'>
                 <h1>
-                    Giannis vs Lebron
+                    Giannis Antetokounmpo vs. Lebron James
                 </h1>
                 <canvas id='giannisAndLebronChart'></canvas>
             </div>
             <div id='lebronChartDiv'>
                 <h1>
-                    Lebron vs an Average NBA Player
+                    Lebron James vs. Average NBA Player
                 </h1>
                 <canvas id='lebronChart'></canvas>
             </div>
             <br><br>
             <script>
-                getChart('giannis', 'Giannis', 'Average NBA Player', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
-                getChart('lebron', 'Lebron', 'Average NBA Player', [25.7, 7.9, 10.6, 26.08, 0.5, 1.2], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
-                getChart('giannisAndLebron', 'Giannis', 'Lebron', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [25.7, 7.9, 10.6, 26.08, 0.5, 1.2])
+                // getChart('giannis', 'Giannis Antetokounmpo', 'Average NBA Player', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
+                getChart('giannis', 'Giannis Antetokounmpo', 'Average NBA Player', [29.6, 13.7, 5.8], [10.2, 4.1, 2.0]);
+                // getChart('lebron', 'Lebron James', 'Average NBA Player', [25.7, 7.9, 10.6, 26.08, 0.5, 1.2], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
+                getChart('lebron', 'Lebron James', 'Average NBA Player', [25.7, 7.9, 10.6], [10.2, 4.1, 2.0]);
+                // getChart('giannisAndLebron', 'Giannis Antetokounmpo', 'Lebron James', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [25.7, 7.9, 10.6, 26.08, 0.5, 1.2]);
+                getChart('giannisAndLebron', 'Giannis Antetokounmpo', 'Lebron James', [29.6, 13.7, 5.8], [25.7, 7.9, 10.6]);
             </script>
         </section>
         <br><br><br><br><br>
@@ -119,25 +120,25 @@
                         <table>
                             <tr style="font-size: 5;"><center><b></b></center></tr>
                             <tr>
-                                <td><b>PTS </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
-                                <td>The averaged points per game for a player.</td>
+                                <td><b>PPG </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged points per game for a player.</td>
                             </tr>
                             <tr>
-                                <td><b>REB </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
-                                <td>The averaged rebounds per game for a player.</td>
+                                <td><b>RPG </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged rebounds per game for a player.</td>
                             </tr>
                             <tr>
-                                <td><b>AST </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
-                                <td>The averaged assists per game for a player.</td>
+                                <td><b>APG </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged assists per game for a player.</td>
                             </tr>
                             <tr>
-                                <td><b>BLK </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
-                                <td>The averaged blocks per game for a player.
+                                <td><b>BPG </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged blocks per game for a player.
                                 </td>
                             </tr>
                             <tr>
-                                <td><b>STL </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
-                                <td>The averaged steals per game for a player.
+                                <td><b>SPG </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
+                                <td>The statistic that measures averaged steals per game for a player.
                                 </td>
                             </tr>
                             <tr>
@@ -153,35 +154,45 @@
             </table>
         </div>
         <br><br><br><br>
-        <div id="MVPintro">
+        <div id="tellTheStory">
             <h2>What's The Story Here?</h2>
             <p>
                 Lebron James has had a "GOAT" of a career. Anyone who thinks otherwise clearly has bias because if there's one thing
-                you can argue with, it's pure, objective statistics. Lebron spent 17 years in the NBA 
+                you can't argue with, it's pure, objective statistics. Lebron is currently in his 17th year in the NBA and has won
+                3 NBA championships, 3 NBA Finals MVP awards, 4 NBA MVP awards, and the list goes on. Lebron has had a career average of
+                27.1 PPG, 7.4 RPG and APG, 1.6 SPG, and 0.8 BPG and there is no doubt that when it's all said and done, The "King" will be
+                inducted into the NBA Hall of Fame and potentially known as the greatest to have ever played the game of basketball.
             </p>
             <p>
-                The Most Valuable Player award by definition, is a player who exceeds the NBA league average for 
-                every player statistic, and ultimately contributes most towards their team winning. So in recent years,
-                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
-                and that's where we can offer more insight.
+                When Giannis Antetokounmpo first entered the NBA, he was not immediately a star player who could dominate his opponents with ease.
+                Giannis took his time to develop; when you compare his photos from his rookie year to now, you would not even be able to recognize 
+                that they're the same person. Giannis is currently in his 7th year in the NBA and most will argue that he is not even at his prime.
+                It is a pure testament to the work Giannis has put into his skills see the current result we have now of him. 
+                Giannis has won the NBA MVP award once and boasts a career average of 20.0 PPG, 8.9 RPG, 4.3 APG, 1.2 SPG, and 1.3 BPG. Giannis's team
+                this year set the record for making the playoffs the fastest in history, having a record of 48-8 to secure the number one seed in the East.
+                Giannis will only continue to get better and the game of basketball is priviledged to have seen such growth from the "Greek Freak."
             </p>
             <p>
-                The Most Valuable Player award by definition, is a player who exceeds the NBA league average for 
-                every player statistic, and ultimately contributes most towards their team winning. So in recent years,
-                the top-performing player on the team with the most wins is usually selected as the MVP. However, that is not always the case
-                and that's where we can offer more insight.
+                So from what we know so far, Lebron has had a much longer career than Giannis so it's not really fair to compare the two's accomplishments.
             </p>
         </div>
         <br><br>
         <!-- LINE CHART HERE -->
         <section id='lineChart'>
+            <div class=chart>
+                <script id="infogram_0_58d3af08-4a33-4aef-800a-b5751cffb80b" title="Line Chart Bucks vs Lakers" src="https://e.infogram.com/js/dist/embed.js?zSe" type="text/javascript"></script>
+                <a href="https://infogram.com/58d3af08-4a33-4aef-800a-b5751cffb80b" style="color:#989898!important;text-decoration:none!important;" target="_blank">Line Chart Bucks vs Lakers</a>
+                <br>
+                <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+            </div>     
         </section>
-        <script id="infogram_0_58d3af08-4a33-4aef-800a-b5751cffb80b" title="Line Chart Bucks vs Lakers" src="https://e.infogram.com/js/dist/embed.js?zSe" type="text/javascript"></script>
-        <div class=chart>
-            <a href="https://infogram.com/58d3af08-4a33-4aef-800a-b5751cffb80b" style="color:#989898!important;text-decoration:none!important;" target="_blank">Line Chart Bucks vs Lakers</a>
-            <br>
-            <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
-        </div>        
+        <br><br>
+        <div id="interpretTheChart">
+            <h2>What's The Takeaway?</h2>
+            <p>
+                INSERT LOGIC AND HOLISTIC REASONING HERE
+            </p>
+        </div> 
         <br><br>
         <!-- STACKED BAR CHART HERE -->
         <section id='stackedBarChart'>
@@ -192,29 +203,36 @@
                 <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
             </div>
         </section>
-        <!-- <section id='radar1'>
-            <div id="radarChart1"></div>
-            <h1>COMPARING PLAYERS VIA TRADITIONAL STATS</h1>
-            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
+        <br><br>
+        <div id="interpretTheChart">
+            <h2>What's The Takeaway?</h2>
             <p>
-                BREAKING DOWN THE CHART
+                INSERT LOGIC AND HOLISTIC REASONING HERE
             </p>
+        </div> 
+        <br><br>
+        <!-- NEW DATA VIZ HERE -->
+        <section id='pieChart'>
+            <div class='chart'>
+                <script id="infogram_0_11a4407a-90b9-4904-b708-eb93968f13ad" title="Pie Chart comparing the PER of Giannis and Lebron" src="https://e.infogram.com/js/dist/embed.js?sED" type="text/javascript"></script>
+                <a href="https://infogram.com/11a4407a-90b9-4904-b708-eb93968f13ad" style="color:#989898!important;text-decoration:none!important;" target="_blank">Pie Chart comparing the PER of Giannis and Lebron</a>
+                <br>
+                <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+            </div>
         </section>
-
-        <section class='radar2'>
-            <div id="radarChart2"></div>
-            <h1>COMPARING PLAYERS VIA ADVANCED STATS</h1>
+        <br><br>
+        <div id="interpretTheChart">
+            <h2>What's The Takeaway?</h2>
             <p>
-                BREAKING DOWN THE CHART
+                INSERT LOGIC AND HOLISTIC REASONING HERE
             </p>
-        </section> -->
-
+        </div> 
+        <br><br>
+        <br><br>
         <h1>Conclusion</h1>
         <p>
-            Insert conclusion here.
+            INSERT FINAL NOTES HERE
         </p>
-
         <br><br>
-
     </body>
 </html>

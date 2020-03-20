@@ -3,24 +3,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name='author' content="Joseph Fallon and Jon Zhang">
+        <meta name='author' content="Jon Zhang and Joseph Fallon">
         <title>2020 NBA MVP PREDICTION</title>
-        <link href="/resources/styles.css" rel='stylesheet'>
         <!-- IMPORTS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/highcharts-more.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://code.highcharts.com/highcharts-more.js"></script>
         <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-        <script src="/resources/main.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script type="text/javascript" src="resources/main.js"></script>
         <!-- ROBOTO SLAB FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="./resources/styles.css" rel='stylesheet'>
     </head>
     <body>
-        <h1 id="Header">Exploring the 2020 NBA MVP Race</h1> <br>
+        <br><br>
+        <h1 id="Header">Exploring the 2020 NBA MVP Race</h1>
+        <br><br>
         <div id="missionStatement">
             <h2>MISSION STATEMENT</h2>
             <p>
@@ -35,9 +37,7 @@
                 So let's investigate further, shall we?
             </p>
         </div>
-
-        <br>
-
+        <br><br><br>
         <div id="MVPintro">
             <h2>What makes a league MVP?</h2>
             <p>
@@ -47,109 +47,122 @@
                 and that's where we can offer more insight.
             </p>
         </div>
-
-        <br>
-
+        <br><br><br>
         <section id="playerIntro">
             <h2>Player Intro</h2>
             <div id="playerCard">
                 <div id='giannisCard' class="innerCard">
-                    <img class="headshot" width=70% src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
+                    <img class="headshot" src="resources/images/giannis.png" alt="Giannis Antetokounmpo">
                     <h1>#34 Giannis Antetokounmpo</h1>
                     <h1>Milwaukee Bucks</h1>
                     <h1>FORWARD</h1>
                     <br>
-                    <p>
+                    <div className='stats'>
                         PTS: 29.6 | REB: 13.7
-                    </p>
-                    <p>
+                        <br>
                         AST: 5.8 | PER: 31.71
-                    </p>
-                    <p>
+                        <br>
                         BLK: 1.0 | STL: 1.0
-                    </p>
+                    </div>
                 </div>
-                <table class = "simpleTable">
-                    <tr>
-                        <td width = "15%"><div id="basicStats"></div></td>
-                        <td width = "45%">
+                <div class='glossary'>
+                    <table class = "simpleTable">
+                        <tr>
+                            <td width = "90%">
+                                <h2>Glossary</h2>
                                 <table>
-                                        <tr style="font-size: 4;"><center><b>Glossary</b></center></tr>
-                                        <tr>
-                                            <td><b>PTS </br><font size='2'>(<i>Points/perGame</i>)</font></b></td>
-                                            <td>The ratio of field goals made to field goals attempted
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>FT % </br><font size='2'>(<i>Free Throw Percentage</i>)</font></b></td>
-                                            <td> The ratio of free throws made to free throws attempted. </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>PIE </br><font size='2'>(<i>Player Impact Estimate</i>)</font></b></td>
-                                            <td>The percent of game events a player or team achieves in regards to traditional
-                                                 basketball statistics (PTS, REB, AST, TOV, etc..). A player that achieves more than 10% is 
-                                                 likely to be better than the average player.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>EFG </br><font size='2'>(<i>Effective Field Goal Percentage</i>)</font></b></td>
-                                            <td>Normalized field goal percentage to compensate for players who shoot less three point shots.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Net Rating</b></td>
-                                            <td> Difference between offensive rating and defensive rating</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>RB % </br><font size='2'>(<i>Rebound Percentage</i>)</font></b></td>
-                                            <td> Gauges how effective a player is at gaining possession of the basketball after a missed basket.</td>
-                                        </tr>
-                                    </table>
-                        </td>
-                        <td width = "33%"><div id="advStats"></div></td>
-                    </tr>
-                </table>
+                                    <tr style="font-size: 5;"><center><b></b></center></tr>
+                                    <tr>
+                                        <td><b>PTS </br><font size='1'>(<i>Points/Game</i>)</font></b></td>
+                                        <td>The averaged points per game for a player.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>REB </br><font size='1'>(<i>Rebounds/Game</i>)</font></b></td>
+                                        <td>The averaged rebounds per game for a player.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>AST </br><font size='1'>(<i>Assists/Game</i>)</font></b></td>
+                                        <td>The averaged assists per game for a player.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>BLK </br><font size='1'>(<i>Blocks/Game</i>)</font></b></td>
+                                        <td>The averaged blocks per game for a player.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>STL </br><font size='1'>(<i>Steals/Game</i>)</font></b></td>
+                                        <td>The averaged steals per game for a player.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>PER </br><font size='1'>(<i>Player Efficiency Rating</i>)</font></b></td>
+                                        <td>The NBA's score to measure a player's per-minute performance, taking into account
+                                            field goalds, free throws, 3 pointers, assists, rebounds, blocks, steals, and negative
+                                            stats, like turnovers, missed shots, and fouls.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div id='lebronCard' class="innerCard">
                     <img class="headshot" width=70% src="resources/images/lebron.png" alt="Lebron James">
                     <h1>#23 Lebron James</h1>
                     <h1>Los Angeles Lakers</h1>
                     <h1>FORWARD</h1>
                     <br>
-                    <p>
+                    <div className='stats'>
                         PTS: 25.7 | REB: 7.9
-                    </p>
-                    <p>
+                        <br>
                         AST: 10.6 | PER: 26.08
-                    </p>
-                    <p>
+                        <br>
                         BLK: 0.5 | STL: 1.2
-                    </p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <br><br>
-        
-        <section id='teamChart'>
-            <h1>TEAM VIZ AND COMPARISON</h1>
-            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
-            <p>
-                BREAKING DOWN THE CHART
-            </p>
+        <!-- RADAR CHARTS HERE -->
+        <section id='radarChart'>
+            <div id='giannisChartDiv'>
+                <canvas id='giannisChart'></canvas>
+            </div>
+            <div id='giannisAndLebronChartDiv'>
+                <canvas id='giannisAndLebronChart'></canvas>
+            </div>
+            <div id='lebronChartDiv'>
+                <canvas id='lebronChart'></canvas>
+            </div>
+            <script>
+                getChart('giannis', 'Giannis', 'Average NBA Player', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
+                getChart('lebron', 'Lebron', 'Average NBA Player', [25.7, 7.9, 10.6, 26.08, 0.5, 1.2], [10.2, 4.1, 2.0, 13.2, 0.4, 0.5]);
+                getChart('giannisAndLebron', 'Giannis', 'Lebron', [29.6, 13.7, 5.8, 31.71, 1.0, 1.0], [25.7, 7.9, 10.6, 26.08, 0.5, 1.2])
+            </script>
         </section>
-
+        <br>
+        <!-- LINE CHART HERE -->
+        <section id='lineChart'>
+        </section>
+        <script id="infogram_0_58d3af08-4a33-4aef-800a-b5751cffb80b" title="Line Chart Bucks vs Lakers" src="https://e.infogram.com/js/dist/embed.js?zSe" type="text/javascript"></script>
+        <div class=chart>
+            <a href="https://infogram.com/58d3af08-4a33-4aef-800a-b5751cffb80b" style="color:#989898!important;text-decoration:none!important;" target="_blank">Line Chart Bucks vs Lakers</a>
+            <br>
+            <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+        </div>        
         <br><br>
-
-        <section id='playerChart'>
-            <h1>COMPARING INDIVIDUAL STATS</h1>
-            <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
-            <p>
-                BREAKING DOWN THE CHART
-            </p>
+        <!-- STACKED BAR CHART HERE -->
+        <section id='stackedBarChart'>
+            <div class='chart'>
+                <script id="infogram_0_169b2584-5231-4865-b14c-e843d7a52ace" title="Stacked Bar Chart Giannis vs Lebron" src="https://e.infogram.com/js/dist/embed.js?VB7" type="text/javascript"></script>
+                <a href="https://infogram.com/169b2584-5231-4865-b14c-e843d7a52ace" style="color:#989898!important;text-decoration:none!important;" target="_blank">Stacked Bar Chart Giannis vs Lebron</a>
+                <br>
+                <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+            </div>
         </section>
     
         <br><br>
 
-        <section id='radar1'>
+        <!-- <section id='radar1'>
             <div id="radarChart1"></div>
             <h1>COMPARING PLAYERS VIA TRADITIONAL STATS</h1>
             <img src="resources/images/line-chart_EXAMPLE.png" width=90%>
@@ -164,14 +177,14 @@
             <p>
                 BREAKING DOWN THE CHART
             </p>
-        </section>
-
-        <br><br>
+        </section> -->
 
         <h1>Conclusion</h1>
         <p>
             Insert conclusion here.
         </p>
-        
+
+        <br><br>
+
     </body>
 </html>
